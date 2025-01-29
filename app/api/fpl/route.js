@@ -57,6 +57,12 @@ const transformTeams = (data) => {
     id: team.id,
     name: team.name,
     strength: team.strength,
+    strengthOverallHome: team.strength_overall_home,
+    strengthOverallAway: team.strength_overall_away,
+    strengthAttackHome: team.strength_attack_home,
+    strengthAttackAway: team.strength_attack_away,
+    strengthDefenceHome: team.strength_defence_home,
+    strengthDefenceAway: team.strength_defence_away,
     // Add more fields as needed, e.g., overall points, games played
     // If such data is available in the API response
   }));
@@ -73,6 +79,8 @@ export async function GET(request) {
 
     //
     console.log('Sample Player:', players[0]);
+    console.log('Raw Team Data:', data.teams[0]);
+
 
     return NextResponse.json({ players, teams });
   } catch (error) {

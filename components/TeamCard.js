@@ -12,6 +12,12 @@ const TeamCard = ({ team }) => {
     >
       <h3 className="text-lg font-semibold mb-2">{team.name}</h3>
       <p className="text-sm text-gray-600 mb-1">Strength: {team.strength}</p>
+      <p className="text-sm text-gray-600 mb-1">Strength Overall Home: {team.strength_overall_home}</p>
+      <p className="text-sm text-gray-600 mb-1">Strength Overall Away: {team.strengthOverallAway}</p>
+      <p className="text-sm text-gray-600 mb-1">Strength Attack Home: {team.strengthAttackHome}</p>
+      <p className="text-sm text-gray-600 mb-1">Strength Attack Away: {team.strengthAttackAway}</p>
+      <p className="text-sm text-gray-600 mb-1">Strength Defence Home: {team.strengthDefenceHome}</p>
+      <p className="text-sm text-gray-600 mb-1">Strength Defence Away: {team.strengthDefenceAway}</p>
       {/* Add more team stats here */}
       {/* Example:
       <p className="text-sm text-gray-600 mb-1">Games Played: {team.games_played}</p>
